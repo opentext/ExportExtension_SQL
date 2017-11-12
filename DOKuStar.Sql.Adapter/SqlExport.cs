@@ -51,7 +51,7 @@ namespace CaptureCenter.SqlEE
             try { sqlClient.SetObjectValues(columns); }
             catch (Exception e)
             {
-                document.nonRecoverableError = true;
+                document.NonRecoverableError = true;
                 throw e;
             }
             sqlClient.Insert(columns);
