@@ -37,6 +37,7 @@ namespace CaptureCenter.SqlEE
             { new ConnectionDefinition()
                 {
                     TestSystemName = "Default",
+                    Active = true,
                     Instance = @"",
                     Database = "",
                     Username = "",
@@ -50,6 +51,7 @@ namespace CaptureCenter.SqlEE
         {
             public ConnectionDefinition() { }
             public string TestSystemName { get; set; }
+            public bool Active { get; set; } = true;
             public string Instance { get; set; }
             public string Database { get; set; }
             public string Username { get; set; }

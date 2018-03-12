@@ -8,8 +8,6 @@ using System.IO;
 using System.Globalization;
 using System.Xml;
 
-/// This
-/// 
 namespace CaptureCenter.SqlEE
 {
     #region SqlClient interface
