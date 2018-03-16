@@ -4,8 +4,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.26228.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaptureCenter.Sql.Adapter", "DOKuStar.Sql.Adapter\CaptureCenter.Sql.Adapter.csproj", "{DAD9FF7E-A2ED-4B94-94C6-7C45DB3ABD4D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2315D082-72C1-4EB3-89F3-17C8ACD3A7A1} = {2315D082-72C1-4EB3-89F3-17C8ACD3A7A1}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DOKuStar.Modules.Sql.Writer", "DOKuStar.Modules.Sql.Writer\DOKuStar.Modules.Sql.Writer.csproj", "{B83C4523-AD7D-4129-B5A5-CCC7105A74FA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DAD9FF7E-A2ED-4B94-94C6-7C45DB3ABD4D} = {DAD9FF7E-A2ED-4B94-94C6-7C45DB3ABD4D}
+		{2315D082-72C1-4EB3-89F3-17C8ACD3A7A1} = {2315D082-72C1-4EB3-89F3-17C8ACD3A7A1}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSqlClient", "TestSqlClient\TestSqlClient.csproj", "{92BDFA5C-7E2D-4115-9274-CFF306BF78FB}"
 EndProject
@@ -42,5 +49,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86C83BAC-9184-404D-BBFC-9979D429AF06}
 	EndGlobalSection
 EndGlobal
